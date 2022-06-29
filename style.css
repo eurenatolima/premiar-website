@@ -29,7 +29,7 @@ img {
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 10% 25%);
-  --text-color: rgb(214, 83, 51);
+  --text-color: rgb(255, 140, 0);
   --text-color-light: hsl(0 0% 91%);
   --body-color: rgb(0, 0, 0);
 
@@ -157,11 +157,16 @@ body {
 
 /* === NAVIGATION === */
 
+#header {
+  background-color: #e4e4e4; 
+}
+
 .logo img {
   width: 12rem;
 }
 
 nav {
+
   height: var(--header-height);
   display: flex;
   align-items: center;
@@ -170,6 +175,7 @@ nav {
 }
 
 nav ul li {
+  
   text-align: center;
 }
 
@@ -202,6 +208,7 @@ nav ul li a.active::after {
 }
 
 nav .menu {
+  
   opacity: 0;
   visibility: hidden;
   top: -20rem;
@@ -276,20 +283,11 @@ nav.show div.icon-close {
   position: relative;
 }
 
-#home .image::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: var(--base-color-second);
-  position: absolute;
-  top: -16.8%;
-  left: 16.7%;
-  z-index: 0;
-}
+
 
 #home .image img {
   position: relative;
-  right: 2.93rem;
+  right: 20.93rem;
 }
 
 #home .image img,
